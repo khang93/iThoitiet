@@ -63,6 +63,7 @@
 				7AD7060E1C794BEA00FFE297 /* ViewController.h */,
 				7AD7060F1C794BEA00FFE297 /* ViewController.m */,
 				7AD706111C794BEB00FFE297 /* Main.storyboard */,
+				7AD7061F1C794DBA00FFE297 /* Image */,
 				7AD706141C794BEB00FFE297 /* Assets.xcassets */,
 				7AD706161C794BEB00FFE297 /* LaunchScreen.storyboard */,
 				7AD706191C794BEB00FFE297 /* Info.plist */,
@@ -77,6 +78,13 @@
 				7AD706091C794BEA00FFE297 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AD7061F1C794DBA00FFE297 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

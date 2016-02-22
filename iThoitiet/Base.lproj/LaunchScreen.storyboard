@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +15,54 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iThoitiet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyK-ib-J1x">
+                                <rect key="frame" x="82" y="53" width="210" height="75"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="47q-sK-YY9"/>
+                                    <constraint firstAttribute="height" constant="75" id="iYH-nE-M1V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bigIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bI4-PL-TcK">
+                                <rect key="frame" x="59" y="176" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="NCN-W1-lEs"/>
+                                    <constraint firstAttribute="width" constant="256" id="WPn-vl-7S7"/>
+                                    <constraint firstAttribute="width" constant="256" id="kRk-Gf-9q9"/>
+                                    <constraint firstAttribute="height" constant="256" id="mnp-SV-H24"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NCN-W1-lEs"/>
+                                        <exclude reference="kRk-Gf-9q9"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bI4-PL-TcK" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="157" id="O17-mg-upF"/>
+                            <constraint firstItem="hyK-ib-J1x" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="U5r-AP-NQG"/>
+                            <constraint firstItem="bI4-PL-TcK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="43" id="Xdu-qk-mHg"/>
+                            <constraint firstItem="hyK-ib-J1x" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="33" id="eVX-nE-2tE"/>
+                            <constraint firstItem="bI4-PL-TcK" firstAttribute="centerX" secondItem="hyK-ib-J1x" secondAttribute="centerX" id="nsm-na-8Ra"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="bI4-PL-TcK" secondAttribute="bottom" constant="234" id="ymo-Lz-no3"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="84.5" y="383.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bigIcon" width="128" height="128"/>
+    </resources>
 </document>
